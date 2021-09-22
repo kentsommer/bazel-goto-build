@@ -1,7 +1,7 @@
 # bazel-goto-build
-Tool to enable jumping to the target containing the source file (relies on buildozer)
+Tool to enable jumping to the target containing the source file (relies on [buildozer](https://github.com/bazelbuild/buildtools))
 
-### Example vim integraion (assuming goto_build exists on your path and points to `goto_build.py`):
+### Example vim integration (assuming goto_build exists on your path and points to `goto_build.py`):
 ```
 function! s:gotobuild() abort
     let l:file_path=expand('%:p')
