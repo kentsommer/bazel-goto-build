@@ -7,7 +7,7 @@
 	"name": "bazel-goto-build",
 	"displayName": "bazel-goto-build",
 	"description": "Jump to the bazel BUILD file and target containing the current source file",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
