@@ -77,8 +77,8 @@ def build_lookup_data():
         line = match[0]
         BUILD = match[1]
         prefix = BUILD.split("BUILD")[0]
-        srcs = [f"{prefix}{src}" for src in match[2].split(" ")] if match[1] else []
-        hdrs = [f"{prefix}{hdr}" for hdr in match[5].split(" ")] if match[4] else []
+        srcs = [f"{prefix}{src}" for src in match[2].split(" ")] if match[2] else []
+        hdrs = [f"{prefix}{hdr}" for hdr in match[5].split(" ")] if match[5] else []
         for src in srcs:
             result[src] = f"{BUILD}:{line}"
         for hdr in hdrs:
